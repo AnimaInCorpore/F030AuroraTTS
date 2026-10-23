@@ -1,0 +1,5 @@
+build/
+.venv/
+__pycache__/
+third_party/auroratts/*.safetensors
+third_party/auroratts/samples/

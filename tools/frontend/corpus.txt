@@ -1,0 +1,580 @@
+# Test corpus for tools/frontend/compare.py (UTF-8, Latin-1 representable).
+# One sentence per line; lines starting with '#' are ignored.
+# --- general prose
+The quick brown fox jumps over the lazy dog.
+She sells sea shells by the sea shore.
+It was the best of times, it was the worst of times.
+All happy families are alike; each unhappy family is unhappy in its own way.
+The weather today is cloudy with a chance of rain in the afternoon.
+Please remember to turn off the lights when you leave the room.
+My grandmother used to bake bread every Sunday morning.
+The committee will meet again next week to discuss the budget.
+He opened the door slowly and peered into the darkness.
+Scientists have discovered a new species of frog in the rainforest.
+The train to Boston leaves from platform nine at noon.
+We walked along the beach until the sun went down.
+Her voice was soft, but everyone in the hall could hear her.
+The library closes early on holidays.
+Nobody knew where the old map had come from.
+They argued for hours about politics and religion.
+A small boat drifted lazily across the lake.
+The children laughed as the puppy chased its tail.
+I can't believe it's already the end of October!
+Would you like some tea, or would you prefer coffee?
+The museum's new exhibit features paintings from the Renaissance.
+Our neighbors are moving to Canada next spring.
+The engine sputtered, coughed, and finally died.
+You should always read the instructions before assembling the furniture.
+After the storm, the streets were covered with fallen branches.
+The doctor told him to get more sleep and drink plenty of water.
+His handwriting was almost impossible to decipher.
+The orchestra played a beautiful symphony by Beethoven.
+We need to buy milk, eggs, butter, and flour.
+The mountain trail was steep and narrow.
+Every morning she jogs three miles around the park.
+The bakery on the corner sells the best croissants in town.
+I've never seen so many stars in the sky.
+The software update fixed several bugs but introduced new ones.
+He whispered something, but I couldn't make out the words.
+The river flooded the valley after weeks of heavy rain.
+Don't forget to water the plants while I'm away.
+The students listened carefully to the professor's lecture.
+The cat slept peacefully on the windowsill.
+A strange noise came from the basement late at night.
+The company announced record profits for the third quarter.
+She painted the fence white and planted roses along it.
+They're planning a surprise party for their teacher.
+The bridge was closed for repairs during the summer.
+We'll meet at the cafe across the street from the station.
+The old man sat on the bench feeding the pigeons.
+Lightning struck the tall oak tree in the middle of the field.
+The recipe calls for two cups of sugar and a pinch of salt.
+The airplane landed smoothly despite the strong wind.
+I'm not sure whether he's coming to the meeting.
+The detective examined the footprints in the snow.
+Fresh vegetables are available at the farmers market on Saturdays.
+The concert was postponed because the singer was ill.
+Their house has a large garden with an apple tree.
+The phone rang twice and then stopped.
+He packed his suitcase and called a taxi to the airport.
+Learning a new language takes patience and practice.
+The village was quiet except for the barking of a distant dog.
+The teacher wrote the assignment on the blackboard.
+She smiled and waved goodbye from the window of the bus.
+The ancient castle stood on a hill overlooking the sea.
+We stayed up all night talking about our dreams.
+The hospital is looking for volunteers to help on weekends.
+A thick fog rolled in from the ocean.
+The kids built a snowman in the front yard.
+His speech inspired everyone in the audience.
+The waiter brought us the menu and a basket of bread.
+I haven't decided what to cook for dinner yet.
+The factory produces thousands of cars every month.
+The soldiers marched through the town at dawn.
+The candle flickered and went out.
+She has a remarkable memory for faces and names.
+The garden was full of butterflies and bees.
+The negotiations continued late into the night.
+He apologized for being late and took his seat.
+Our flight was delayed by three hours because of fog.
+The painting was sold at auction for a fortune.
+The road winds through the hills toward the coast.
+They spent their honeymoon on a small island in Greece.
+The farmer drove his tractor across the muddy field.
+The judge listened patiently to both sides of the argument.
+The mail carrier delivers letters even in the worst weather.
+I wonder what life will be like in a hundred years.
+The new policy will take effect at the beginning of next year.
+She plays the violin in the city orchestra.
+The wind howled through the empty streets.
+The scientists measured the temperature of the water every hour.
+His jokes made everyone at the table laugh.
+The hikers reached the summit just before sunset.
+The government has promised to lower taxes.
+A gentle breeze rustled the leaves of the trees.
+The fire department responded quickly to the alarm.
+She keeps a diary and writes in it every evening.
+The quarterback threw the ball to the end zone.
+The students were excited about their trip to the zoo.
+The baby finally fell asleep in her mother's arms.
+He fixed the leaking faucet with a wrench and some tape.
+The movie was so boring that I fell asleep halfway through.
+The ship sailed into the harbor under a full moon.
+Their team won the championship for the second year in a row.
+I'll call you as soon as I arrive.
+The professor's research focuses on climate change.
+The shop sells handmade jewelry and pottery.
+The lawyer advised her client not to say anything.
+We watched the fireworks from the roof of our building.
+The forest was dark and silent.
+The king ordered his knights to defend the castle.
+The volcano erupted, sending ash high into the sky.
+He spent the afternoon reading in the garden.
+The economy grew faster than expected last quarter.
+The baker kneaded the dough and shaped it into loaves.
+The dog barked loudly at the mailman.
+She was born in a small town in the north of England.
+Please speak more slowly so that everyone can understand.
+The thief escaped through an open window.
+They celebrated their anniversary at an expensive restaurant.
+The clock struck midnight, and the guests began to leave.
+The athletes trained hard for the upcoming competition.
+His explanation didn't make much sense to me.
+The town council approved the construction of a new school.
+The patient was discharged from the hospital on Friday.
+I could hear the waves crashing against the rocks.
+The gardener trimmed the hedges and mowed the lawn.
+Our journey across the desert took four days.
+The witness described the suspect as tall and thin.
+She poured herself a glass of cold lemonade.
+The architect designed a building made entirely of glass.
+The pilot announced that we would be landing shortly.
+The meeting was adjourned until further notice.
+He collected stamps from all over the world.
+The storm knocked out power to thousands of homes.
+The cookies smelled wonderful as they came out of the oven.
+Nobody expected the underdog to win the race.
+The lecture hall was packed with eager students.
+The fisherman caught a huge salmon in the river.
+She gave him a puzzled look and shook her head.
+The parade marched down Main Street on Independence Day.
+The internet has changed the way we communicate.
+They found an old chest full of letters in the attic.
+The nurse checked his pulse and blood pressure.
+The house smelled of fresh paint and new carpet.
+The orchestra tuned their instruments before the performance.
+The mayor gave a speech at the opening ceremony.
+His car broke down on the highway in the middle of nowhere.
+We picked strawberries at a farm outside the city.
+The sky turned orange and pink as the sun set.
+The museum is open every day except Monday.
+The prisoners were transferred to another facility.
+The scientist published her findings in a respected journal.
+The baby giraffe stood up on wobbly legs.
+We must act now to protect the environment.
+The night was cold, and the stars were bright.
+The investigation revealed a number of serious problems.
+The crowd cheered as the runners crossed the finish line.
+He borrowed my umbrella and never gave it back.
+I'd rather stay home tonight and watch a movie.
+The jury reached a verdict after two days of deliberation.
+The old lighthouse has guided ships for over a century.
+Their conversation was interrupted by a knock at the door.
+The vineyard produces some of the finest wine in the region.
+The bus was crowded, so we decided to walk.
+The magician pulled a rabbit out of his hat.
+The new bridge will connect the island to the mainland.
+She speaks French, German, and a little Italian.
+The cost of living has risen sharply this year.
+The hurricane is expected to make landfall tomorrow morning.
+He was too tired to finish his homework.
+The kitten hid under the bed during the thunderstorm.
+The library has thousands of books on every subject.
+The two countries signed a peace treaty.
+The sculpture was carved from a single block of marble.
+Her latest novel has become an international bestseller.
+The team celebrated their victory with a big dinner.
+The waves were too high for swimming.
+We should leave early to avoid the traffic.
+The president addressed the nation on television.
+The bees were buzzing around the flowers.
+The engineers tested the bridge before opening it to traffic.
+My brother and I went fishing at the lake last weekend.
+The poet read several of his poems aloud.
+The restaurant was closed for renovation.
+A rainbow appeared after the rain.
+The farmers are worried about the drought.
+I think we're lost; let's ask somebody for directions.
+The hotel room had a beautiful view of the ocean.
+He tied his shoes and ran out the door.
+Wait, what did you just say?
+Oh no, I left my keys in the car!
+Well, that's certainly one way to look at it.
+Yes, sir, I understand completely.
+Hello, is anyone there?
+Stop! Don't touch that!
+Really? I had no idea.
+Hmm, let me think about it for a moment.
+# --- numbers, dates, money
+The meeting starts at 9 and ends at 11.
+There were 27 people in the room.
+The population of the city is 1,250,000.
+She was born in 1984.
+The war ended in 1945.
+The company was founded in 2003.
+In 2010 the rules changed again.
+The building was completed in 1900.
+He moved to Paris in 1066, or so the legend says.
+The year 2000 was a leap year.
+The next Olympics will be held in 2028.
+The bill came to $45.99, including tax.
+Tickets cost $5 each.
+He paid $1,000,000 for the house.
+The coffee costs $2.50 a cup.
+I found $0.75 in my pocket.
+She owes me $1.
+The ticket costs $.50 more than last year.
+The rent is £850 a month.
+The price dropped to £3.
+Pi is approximately 3.14159.
+The temperature fell to 2.5 degrees.
+The average score was 87.3 points.
+He finished in 1st place, and his sister came 2nd.
+Today is the 21st of June.
+The 3rd chapter is the longest.
+This is our 100th episode!
+She celebrated her 40th birthday last week.
+The 19th century saw great changes in industry.
+The office is on the 12th floor.
+We live at 221 Baker Street.
+Call me at extension 4402.
+The recipe serves 4 to 6 people.
+Chapter 11 explains the method in detail.
+The highway speed limit is 65 miles per hour.
+Only 3 of the 12 candidates passed the exam.
+The marathon is 26.2 miles long.
+He scored 101 points in the game.
+The library owns 35,000 books.
+There are 365 days in a year and 24 hours in a day.
+The mountain is 8,848 meters high.
+The car traveled 500 kilometers in 5 hours.
+About 7 billion people live on Earth; actually it's closer to 8000000000.
+The project cost 2,500 dollars.
+Her phone number ends in 0042.
+The answer to question 7 is 42.
+Flight 307 to Chicago has been cancelled.
+The invoice total is 1234.56.
+He was 17 years old when he left home.
+The shop opens at 10 and closes at 6.
+The bus leaves every 15 minutes.
+Room 1001 is on the tenth floor.
+The treaty was signed on July 4, 1776.
+World War I began in 1914 and ended in 1918.
+The first moon landing took place in 1969.
+In 1492, Columbus sailed across the Atlantic.
+The 1990s were a decade of rapid change.
+The score was 3 to 2 at halftime.
+I've told you 1000 times not to do that.
+The building has 102 floors.
+He ran 5,000 meters in under 14 minutes.
+The house was built in 1850 and renovated in 2005.
+The 2nd and 3rd runners were only 0.4 seconds apart.
+Her grandfather turned 99 last month.
+The school has 1,500 students and 120 teachers.
+The book has 432 pages.
+The sale ends on the 31st.
+The 101st Airborne Division landed in Normandy.
+He was the 44th president of the United States.
+The 1st of January is a public holiday.
+Page 13 is missing from the report.
+The temperature reached 105 degrees in the shade.
+A dozen eggs cost $3.20 at the market.
+The fine is $250 for the first offense.
+The car costs $23,500 before taxes.
+She earned $75,000 last year.
+They raised $1.5 million for charity.
+The jackpot reached $640 million.
+The stock fell 12 percent in 2 days.
+The new law affects 3.5 million people.
+The museum attracts 2 million visitors a year.
+The ship was 270 meters long.
+I need 3 apples, 2 oranges and 1 banana.
+The game ended 0 to 0.
+Version 2.0 of the software was released in 2019.
+His record of 9.58 seconds still stands.
+The temperature dropped from 30 to 18 degrees.
+There are 52 cards in a deck.
+The library was founded in 1753.
+The castle dates back to 1215.
+In 2025 the company plans to open 15 new stores.
+Mozart was born in 1756 and died in 1791.
+She ran the 100 meters in 11.2 seconds.
+Between 1939 and 1945 the city was bombed 71 times.
+The 2004 season was their best ever.
+The address is 1600 Pennsylvania Avenue.
+The dam holds back 35 trillion liters of water.
+The theater has 1,200 seats.
+The 7th day of the week is Sunday.
+He bought 2 tickets for the 8th row.
+The patient's temperature was 38.5.
+It took 3,000 workers 20 years to build.
+The ratio is 3 to 1.
+The plane carried 189 passengers.
+Only 1 in 10 people knew the answer.
+The race starts at 8.30 in the morning.
+The town had 900 inhabitants in 1800.
+The 1960 election was very close.
+He has 2 brothers and 3 sisters.
+The first 10 customers get a free gift.
+The 20th anniversary party was a great success.
+We met on the 22nd and again on the 23rd.
+# --- abbreviations and titles
+Mr. Jones and Mrs. Smith arrived together.
+Dr. Brown will see you now.
+They live on Oak St. near the park.
+Ms. Taylor teaches mathematics.
+Prof. Wilson gave the keynote address.
+The meeting with Gen. Patton was postponed.
+Mt. Everest is the highest mountain in the world.
+Sgt. Miller reported for duty.
+The package was sent to Washington, D.C. last week.
+Capt. Hook was the villain of the story.
+St. Louis is a city in Missouri.
+The U.S. economy grew last year.
+She works for the U.N. in New York.
+Please reply A.S.A.P. if you can.
+Mr. and Mrs. Johnson invited us to dinner.
+Dr. Watson, I presume?
+The lecture is at 3 p.m. in room 5.
+The store opens at 8 a.m. sharp.
+Rev. Martin led the service.
+Gov. Brown signed the bill into law.
+Sen. Smith voted against the proposal.
+Jr. members pay half price.
+John Smith Jr. inherited the farm.
+Lt. Dan lost both legs in the war.
+Popular pets, e.g. cats and dogs, need daily care.
+Use a strong password, i.e. one with many characters.
+The book, i.e. the first edition, is very rare.
+Mrs. Robinson smiled at him.
+Ave. Maria is a famous song.
+Dept. of Health officials met yesterday.
+The Co. was sold in 1999.
+He studied at MIT and later at UCLA.
+The FBI and the CIA cooperated on the case.
+NASA launched a new satellite.
+The BBC reported the news first.
+I work at IBM.
+The USA and the UK signed the agreement.
+The CEO resigned after the scandal.
+TV shows are getting longer.
+The DNA test confirmed his identity.
+etc. is short for et cetera.
+Mr. O'Brien and Ms. McDonald are old friends.
+Dr. Martin Luther King Jr. gave a famous speech.
+The No. 1 song this week is very catchy.
+Fig. 3 shows the results.
+See vol. 2, p. 45 for details.
+Mt. St. Helens erupted in 1980.
+Mr. Smith-Jones is a well-known author.
+# --- punctuation and spacing
+Wait... what was that?
+Well -- I suppose you're right.
+He said, "Come here!"
+The answer is (as you might expect) no.
+Yes; no; maybe: who knows?
+First, second, and third.
+Really?! I can't believe it!!
+Hmm... let me see... no.
+She paused - then continued.
+"Stop," she said, "or I'll scream."
+The list includes: apples, pears, and plums.
+It's a long-term, high-risk, low-reward plan.
+He's a self-made man.
+This is a so-called state-of-the-art system.
+They're the brother-in-law's friends.
+What?!?!
+No!!!!
+...and then there were none.
+The end.
+Is it 'right' or 'wrong'?
+The children's toys were scattered everywhere.
+The boss's car is parked outside.
+James' book was on the table.
+Rock 'n' roll will never die.
+Ma'am, your table is ready.
+O'clock is short for of the clock.
+I'll be there at five o'clock.
+You can't, won't, and shouldn't do that.
+Y'all come back now.
+The well-to-do family lived in a large house.
+A twenty-five-year-old man was arrested.
+It was a hand-me-down coat.
+The mother-in-law visited for the weekend.
+Up-to-date information is essential.
+She was a world-famous singer.
+He wore a black-and-white suit.
+Check out www.example.com for details.
+Send an email to info@example.org today.
+The file is called report.final.txt.
+The ratio was 50/50.
+He scored 100% on the test.
+It costs 5 euros & 20 cents.
+Use the #hashtag to find it.
+The temperature was 20 C.
+The meeting is at 10:30.
+Apples + oranges = fruit.
+# --- names, rare words, foreign words
+Mr. Wakefield winds up his graphic account.
+The Caslon type shows great shortcomings.
+Lee Harvey Oswald was arrested in Dallas.
+Charles J. Carrico was a resident in surgery.
+The roominghouse was owned by Earlene Roberts.
+Latona examined the prints on the cartons.
+Newgate prison received prisoners from several counties.
+The quokka is a small marsupial found in Australia.
+His sesquipedalian vocabulary impressed nobody.
+The defenestration of Prague started a war.
+She studied phenomenology and hermeneutics.
+The axolotl can regenerate its limbs.
+The chef prepared a delicious bouillabaisse.
+They visited Reykjavik and Ouagadougou.
+The zeitgeist of the era was optimistic.
+The schadenfreude in his voice was obvious.
+His doppelganger appeared in the photograph.
+The yttrium sample was analyzed in the lab.
+The startup developed a blockchain-based platform.
+She tweeted about the new smartphone.
+The influencer posted a selfie on Instagram.
+The podcast discussed cryptocurrency and NFTs.
+The Falcon030 computer was released by Atari.
+Kubernetes orchestrates containerized workloads.
+The protagonist, Xanthippe, was a philosopher's wife.
+Grzegorz Brzeczyszczykiewicz is a difficult name.
+The Ngorongoro crater is in Tanzania.
+Tchaikovsky composed the Nutcracker.
+The ukulele originated in Hawaii.
+The ptarmigan changes color in winter.
+Quetzalcoatl was an Aztec deity.
+Her café served crème brûlée and café au lait.
+The naïve résumé impressed the façade designers.
+We flew from Zürich to São Paulo.
+The piñata was filled with candy.
+Señor Muñoz lives in Málaga.
+The Brontë sisters wrote famous novels.
+The fiancé brought a bouquet of jonquils.
+Hyperventilating, the spelunker crawled through the crevasse.
+The supercalifragilisticexpialidocious song is from a film.
+The antidisestablishmentarianism debate continued.
+The glockenspiel and the theremin played together.
+The blorptastic gadget whirred and frobnicated.
+The snarfle-wumpus is an imaginary creature.
+Jabberwocky is a nonsense poem by Lewis Carroll.
+Twas brillig, and the slithy toves did gyre and gimble in the wabe.
+The mimsy borogoves were outgrabe.
+The wizard Rincewind lived in Ankh-Morpork.
+Daenerys rode a dragon over Westeros.
+Gandalf and Frodo traveled to Mordor.
+The Klingon warrior drew his bat'leth.
+The Pokemon trainer caught a Pikachu.
+My username is gamer2024 on that site.
+The Wi-Fi password is on the fridge.
+Emojis are popular on social media.
+The vlogger uploaded a new unboxing video.
+The coronavirus pandemic changed everything.
+The Zoom call lasted three hours.
+The hashtags trended worldwide.
+She googled the answer on her phone.
+# --- homographs
+I will read the book tomorrow.
+Yesterday I read the newspaper.
+He read the letter aloud to everyone.
+She has read every novel by that author.
+Please record the meeting.
+The record was broken again.
+They set a new world record.
+Did you record the show?
+The present situation is difficult.
+I would like to present our new product.
+She gave him a present for his birthday.
+He will present the award at the ceremony.
+The wind was too strong to sail.
+Don't forget to wind the clock.
+Please close the door.
+We live close to the station.
+They object to the new rules.
+The object was found in the river.
+The subject of the lecture was history.
+He will subject them to a test.
+Use a pencil, not a pen.
+What is the use of complaining?
+I used to live in London.
+The car was used by the police.
+He used a hammer to fix it.
+Used cars are cheaper.
+The house was built in 1920.
+They will house the refugees in tents.
+The project was a huge success.
+They project that sales will rise.
+She was content with the result.
+The content of the book is excellent.
+He made a perfect score.
+They will perfect the design.
+The contract was signed yesterday.
+The muscles contract when you exercise.
+Their conduct was unacceptable.
+He will conduct the orchestra tonight.
+Prices increase every year.
+There was a sharp increase in prices.
+The desert is hot and dry.
+Soldiers who desert are punished.
+He made a complex plan.
+The building is a complex structure.
+Please separate the eggs.
+They live in separate rooms.
+Let me estimate the cost.
+The estimate was too high.
+He refused to refuse the offer.
+They will rebel against the king.
+The rebel army attacked at dawn.
+The permit was granted.
+They do not permit smoking.
+The minute hand moved slowly.
+The convict escaped from prison.
+The jury will convict him.
+He tried to excuse his behavior.
+That is no excuse.
+We need to produce more food.
+The produce at the market is fresh.
+The progress was slow.
+I learned a lot in school.
+The learned professor spoke at length.
+He is a learned man.
+The alternate route was faster.
+We alternate between the two methods.
+They insert the key into the lock.
+The insert fell out of the magazine.
+She will upset her parents.
+The upset victory surprised everyone.
+The survey shows strong support.
+They survey the land every year.
+Graduate students teach many courses.
+She will graduate next year.
+The mouth of the river is wide.
+The process is very slow.
+They process thousands of orders daily.
+The processing time is two days.
+We must protest against the decision.
+The protest lasted three days.
+He tried to import the data.
+The import of goods was banned.
+Combat troops were sent to the region.
+We must combat the disease.
+The invite came in the mail.
+Did you invite your friends?
+The rerun of the show was popular.
+The transfer was completed on time.
+We will transfer the money tomorrow.
+The suspect was arrested.
+I suspect he is lying.
+The digest of articles arrived.
+It takes time to digest food.
+The extract was bitter.
+They extract oil from the ground.
+The address was written on the envelope.
+She will envelope the gift in paper.
+The duplicate key was lost.
+They will duplicate the results.
+The moderate approach worked.
+She will moderate the discussion.
+His deliberate actions caused harm.
+They will deliberate for hours.
+The associate professor gave a talk.
+I associate that song with summer.
+The intimate details were revealed.
+The closer we got, the louder it became.
+The closes of the day are peaceful.
+He blessed the food.
+The blessed event happened in May.
+The crooked man walked a crooked mile.
+The ragged clothes were thrown away.

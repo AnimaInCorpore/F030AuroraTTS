@@ -1,0 +1,35 @@
+{
+  "sr": 22050,
+  "hop": 256,
+  "n_fft": 1024,
+  "n_mels": 80,
+  "vocab": 79,
+  "d": 56,
+  "enc_k": 5,
+  "enc_loops": 4,
+  "gru_h": 28,
+  "pred_ch": 32,
+  "dec_layers": 9,
+  "dec_k": 5,
+  "dec_dil": [
+    1,
+    2,
+    4
+  ],
+  "dec_ffn": 3,
+  "kh": 40,
+  "kn": 24,
+  "n_harm": 80,
+  "fir_taps": 65,
+  "f0_mean": 5.313726902008057,
+  "f0_std": 0.2597316801548004,
+  "model_type": "auroratts",
+  "architectures": [
+    "AuroraTTSModel"
+  ],
+  "dtype": "float32",
+  "auto_map": {
+    "AutoConfig": "configuration_auroratts.AuroraTTSConfig",
+    "AutoModel": "modeling_auroratts.AuroraTTSModel"
+  }
+}
