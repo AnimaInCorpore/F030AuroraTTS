@@ -30,6 +30,10 @@ FILES = [
 README = """F030AuroraTTS {version}
 {rule}
 
+NOTE: this project was developed with AI assistance (Claude). The code,
+DSP kernel and documentation were written largely by an AI model under
+human direction and checked by the emulator gates.
+
 English text-to-speech for the Atari Falcon030: a port of AuroraTTS-100K,
 a 95,638-parameter neural voice, to the Falcon's DSP56001. The network and
 its synthesizer run on the DSP; speech plays by DMA at 24,585 Hz.
