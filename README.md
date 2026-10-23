@@ -1,5 +1,9 @@
 # F030AuroraTTS
 
+> **Note:** this project was developed with AI assistance (Claude). The code,
+> DSP kernel and documentation were written largely by an AI model under human
+> direction and checked by the emulator gates described below.
+
 English text-to-speech for the Atari Falcon030. It is a port of
 [AuroraTTS-100K](https://huggingface.co/AuroraAI-Research/AuroraTTS-100K), a
 95,638-parameter neural voice trained on LJSpeech, to the Falcon's DSP56001:
