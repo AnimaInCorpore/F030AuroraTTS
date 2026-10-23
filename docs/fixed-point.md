@@ -96,6 +96,9 @@ Sentence 1 of the evaluation set, 64 symbols, 4.24 s of speech, rendered by
 | synthesizer | 8.41 | 7.26 |
 | total | 16.1 (3.8x) | **13.9 (3.3x)** |
 
+The FreeMiNT-friendly host-port device (one `Supexec` per transaction, see
+`src/falcon/falcon-coop.h`) adds about 0.2 s under TOS: 14.1 s.
+
 Where the network's time goes: matrix products 3.4 s (one multiply per
 instruction cycle with one external operand, the DSP's floor for this
 network), activations 0.6 s, layer norm 0.45 s, host transfers and weight

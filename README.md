@@ -22,7 +22,7 @@ and pitch is within about a cent.
 - Runs end to end in the DSP-calibrated Hatari, from text to audible DMA
   playback. **It has not yet run on a physical Falcon.**
 - It is not real time. A sentence renders in about 3.3 times its spoken
-  length: 4.24 s of speech takes 13.9 s on the emulated Falcon. Each sentence
+  length: 4.24 s of speech takes 14.1 s on the emulated Falcon. Each sentence
   plays while the next one renders.
 - Every emulator gate passes bit-exactly: each DSP operation, the synthesizer
   step by step, five whole sentences, and the player from plain text to WAV.
@@ -68,6 +68,34 @@ How it behaves:
 
 Input is 8-bit ASCII or Latin-1. Numbers, years, ordinals and currency are
 spoken as the model's training frontend (g2p_en) would say them.
+
+### Under FreeMiNT
+
+`AURORA.TTP` runs under FreeMiNT and leaves the machine usable while it
+renders. It enters supervisor mode only for each host-port transaction (one
+short `Supexec`), waits for the DSP in polls of at most about 6.5 ms, and
+calls `Syield` between them, so other processes run while the DSP computes.
+Ctrl-C (SIGINT), SIGTERM, SIGQUIT and SIGHUP stop it after the current
+sentence, like a key press, and release the DSP. Memory protection must be off (`MEM_PROT=NO`), as
+for most DSP programs, because the player touches the host port directly.
+
+Measured in the emulator under FreeMiNT 1.19 (snapshot 648983e1, 68030
+kernel), rendering 1.9 s of speech, with and without a busy-loop program
+beside it:
+
+| Player | Alone | With a busy neighbour | Neighbour's share of its solo speed |
+| --- | ---: | ---: | ---: |
+| previous (renders in supervisor mode) | 6.2 s | 6.3 s | 5 % |
+| current (supervisor per transaction) | 8.3 s | 19.2 s | 40 % |
+
+Under MiNT the player gives up time it would otherwise spend; under plain TOS
+`Syield` returns at once and the cost is about 1.5 %. The WAV is
+bit-identical in every case.
+
+The test (`tools/gate/mint-gate.py`) boots FreeMiNT from a generated floppy
+image, because MiNT replaces the GEMDOS trap that Hatari's folder drive hooks.
+It expects the snapshot `freemint-1-19-648983e1-tt_falcon_clones.zip` unpacked
+in `build/mint/drive`.
 
 ## How it works
 
@@ -166,6 +194,7 @@ must all be rebuilt; `build-all.sh` does that.
 | `python3 tools/gate/syn-check.py 70` | the DSP synthesizer's output and state, step by step |
 | `python3 tools/gate/net-gate.py --ids ...` | phonemes to PCM on the emulated Falcon, every checksum equal |
 | `python3 tools/gate/tts-gate.py [--text "..."]` | `AURORA.TTP` writes a WAV equal to the reference, sample for sample |
+| `python3 tools/gate/mint-gate.py [--alone]` | `AURORA.TTP` under FreeMiNT 1.19 beside a busy loop: the loop's share each second, and the WAV equal to the reference |
 | `python3 tools/gate/profile-split.py ids` | DSP time by kernel label, network and synthesizer separately |
 
 Emulator timing is a model result: Hatari does not model the DSP's external
@@ -186,6 +215,8 @@ memory mapping, which should be probed on real hardware first.
 | `dsp/synth.asm`, `synhot.asm`, `synmap.asm` | the DSP synthesizer and its memory map |
 | `src/falcon/aurora-tts.cpp` | the player, `AURORA.TTP` |
 | `src/falcon/falcon-dsp.h` | DSP boot and host-port transfers |
+| `src/falcon/falcon-coop.h` | the same transfers, one `Supexec` each, yielding while the DSP computes |
+| `src/falcon/minttest.cpp`, `tools/gate/fatimage.py` | the FreeMiNT test: INIT program and boot floppy builder |
 | `src/falcon/aurtest.cpp`, `optest.cpp`, `syntest.cpp`, `lockstep.cpp` | gate and debugging programs |
 | `src/frontend/g2p.h` | text to phonemes |
 | `tools/frontend/` | dictionary builder, letter-to-sound training, comparisons |

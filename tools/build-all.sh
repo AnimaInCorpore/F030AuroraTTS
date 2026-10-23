@@ -11,7 +11,7 @@ sh tools/dsp/build-dsp.sh
 for t in aurora-ref aurora-vmtest aurora-optest aurora-syncheck; do
     g++ -O2 -std=c++11 -Wall -Wextra -I src/aurora -I tools/host tools/host/$t.cpp -o build/$t.exe
 done
-for p in "aurtest AURTEST.TOS" "optest OPTEST.TOS" "syntest SYNTEST.TOS" "lockstep LOCKSTEP.TOS" "aurora-tts AURORA.TTP"; do
+for p in "aurtest AURTEST.TOS" "optest OPTEST.TOS" "syntest SYNTEST.TOS" "lockstep LOCKSTEP.TOS" "aurora-tts AURORA.TTP" "minttest MINTTEST.TOS"; do
     set -- $p
     sh tools/falcon-build.sh "$1" "$2"
 done

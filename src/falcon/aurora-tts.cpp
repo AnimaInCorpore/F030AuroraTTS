@@ -19,7 +19,8 @@
 #include <string.h>
 
 #include "driver.h"
-#include "falcon-dsp.h"
+#include "falcon-coop.h"
+#include <signal.h>
 #include "symbols.h"
 #include "synth-driver.h"
 
@@ -39,13 +40,21 @@ namespace {
 const long kRate = 24585;
 const int kMaxIds = 400;
 
-FalconDsp g_dsp;
-Driver<FalconDsp> g_drv;
+// Every host-port transaction is a short Supexec and the waits for the DSP
+// happen in user mode (falcon-coop.h): FreeMiNT keeps running other
+// processes while a sentence renders.
+CoopDsp g_dsp;
+Driver<CoopDsp> g_drv;
+volatile sig_atomic_t g_stop;
+
+void onSignal(int) {
+	g_stop = 1;
+}
 int32_t *g_img;
 bool g_dspHeld, g_soundHeld;
 
 uint32_t ticks() {
-	return *(volatile uint32_t *)0x4ba;
+	return (uint32_t)CoopDsp::ticks();
 }
 
 uint8_t *loadFile(const char *path, long *size) {
@@ -106,7 +115,7 @@ bool playing() {
 
 void waitPlayback() {
 	while (g_playing >= 0 && playing())
-		;
+		Syield();
 	g_playing = -1;
 }
 
@@ -165,7 +174,7 @@ struct Timing {
 int16_t *g_pcm;
 long g_pcmCapacity;
 
-// ids -> g_pcm; returns the sample count (0 on failure). Supervisor mode.
+// ids -> g_pcm; returns the sample count (0 on failure). User mode.
 long render(const uint8_t *ids, int N, Timing *t) {
 	static int32_t x[kMaxIds * kD], work[kMaxIds * kD], logd[kMaxIds], pit[kMaxIds], c2[kMaxIds];
 	static uint8_t dur[kMaxIds];
@@ -285,10 +294,8 @@ bool speak(const char *sentence) {
 		return N >= 0;
 	printf("%s\r\n", sentence);
 	Timing t;
-	void *ssp = (void *)Super(0L);
 	const long n = render(ids, N, &t);
-	SuperToUser(ssp);
-	if (n <= 0 || g_dsp.failed) {
+	if (n <= 0 || g_dsp.failed()) {
 		printf("rendering failed\r\n");
 		return false;
 	}
@@ -319,6 +326,8 @@ bool speak(const char *sentence) {
 		waitPlayback();
 		play(which);
 	}
+	if (g_stop)
+		return false;
 	if (Bconstat(2)) {
 		Bconin(2);
 		return false;
@@ -338,6 +347,11 @@ void shutdown() {
 
 int main(int argc, char **argv) {
 	printf("AuroraTTS-100K for the Falcon030 DSP, %s\r\n", AURORA_VERSION);
+	Pdomain(1);   // a MiNT program (TOS ignores it)
+	signal(SIGINT, onSignal);   // stop after the current sentence, as a key does
+	signal(SIGTERM, onSignal);
+	signal(SIGQUIT, onSignal);
+	signal(SIGHUP, onSignal);
 	const char *wavPath = 0, *textFile = 0;
 	static char text[4096];
 	text[0] = 0;
@@ -406,9 +420,7 @@ int main(int argc, char **argv) {
 		return 1;
 	}
 	g_dspHeld = true;
-	void *ssp = (void *)Super(0L);
 	const bool alive = g_dsp.ping();
-	SuperToUser(ssp);
 	if (!alive) {
 		printf("the DSP kernel did not answer\r\n");
 		shutdown();
@@ -431,6 +443,8 @@ int main(int argc, char **argv) {
 			p = nextSentence(p, sentence, sizeof sentence);
 			if (sentence[0] && !speak(sentence))
 				break;
+			if (g_stop)
+				break;
 		}
 	} else {
 		printf("Type text, an empty line ends.\r\n");
@@ -448,8 +462,9 @@ int main(int argc, char **argv) {
 		}
 	}
 	if (g_totalSamples > 0)
-		printf("total: %ld.%02ld s of speech in %ld.%02ld s\r\n", g_totalSamples / kRate,
-		       (g_totalSamples % kRate) * 100 / kRate, (long)(g_totalTicks / 200), (long)(g_totalTicks % 200) / 2);
+		printf("total: %ld.%02ld s of speech in %ld.%02ld s (%ld yields to other programs)\r\n", g_totalSamples / kRate,
+		       (g_totalSamples % kRate) * 100 / kRate, (long)(g_totalTicks / 200), (long)(g_totalTicks % 200) / 2,
+		       g_dsp.yields);
 	if (g_wav) {
 		fseek(g_wav, 0, SEEK_SET);
 		wavHeader(g_wav, g_wavSamples);
@@ -457,9 +472,7 @@ int main(int argc, char **argv) {
 	}
 	waitPlayback();
 	// the gates stop the emulator when the DSP sees DONE
-	ssp = (void *)Super(0L);
 	g_dsp.done();
-	SuperToUser(ssp);
 	shutdown();
 	return 0;
 }
